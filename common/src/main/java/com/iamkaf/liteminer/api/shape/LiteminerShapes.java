@@ -5,6 +5,9 @@ import com.iamkaf.liteminer.shapes.ShapelessWalker;
 import com.iamkaf.liteminer.shapes.StaircaseDownWalker;
 import com.iamkaf.liteminer.shapes.StaircaseUpWalker;
 import com.iamkaf.liteminer.shapes.ThreeByThreeWalker;
+import com.iamkaf.liteminer.shapes.FiveByFiveWalker;
+import com.iamkaf.liteminer.shapes.SevenBySevenWalker;
+import com.iamkaf.liteminer.shapes.FifteenByFifteenWalker;
 import com.iamkaf.liteminer.shapes.TunnelWalker;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.Identifier;
@@ -49,12 +52,30 @@ public final class LiteminerShapes {
      */
     public static final Identifier THREE_BY_THREE = Constants.resource("three_by_three");
 
+    /**
+     * Built-in 5x5 shape id.
+     */
+    public static final Identifier FIVE_BY_FIVE = Constants.resource("five_by_five");
+
+    /**
+     * Built-in 7x7 shape id.
+     */
+    public static final Identifier SEVEN_BY_SEVEN = Constants.resource("seven_by_seven");
+
+    /**
+     * Built-in 15x15 shape id.
+     */
+    public static final Identifier FIFTEEN_BY_FIFTEEN = Constants.resource("fifteen_by_fifteen");
+
     static {
         register(SHAPELESS, Component.translatable("shape.liteminer.shapeless"), new ShapelessWalker()::walk);
         register(SMALL_TUNNEL, Component.translatable("shape.liteminer.small_tunnel"), new TunnelWalker()::walk);
         register(STAIRCASE_UP, Component.translatable("shape.liteminer.staircase_up"), new StaircaseUpWalker()::walk);
         register(STAIRCASE_DOWN, Component.translatable("shape.liteminer.staircase_down"), new StaircaseDownWalker()::walk);
         register(THREE_BY_THREE, Component.translatable("shape.liteminer.three_by_three"), new ThreeByThreeWalker()::walk);
+        register(FIVE_BY_FIVE, Component.translatable("shape.liteminer.five_by_five"), new FiveByFiveWalker()::walk);
+        register(SEVEN_BY_SEVEN, Component.translatable("shape.liteminer.seven_by_seven"), new SevenBySevenWalker()::walk);
+        register(FIFTEEN_BY_FIFTEEN, Component.translatable("shape.liteminer.fifteen_by_fifteen"), new FifteenByFifteenWalker()::walk);
     }
 
     private LiteminerShapes() {

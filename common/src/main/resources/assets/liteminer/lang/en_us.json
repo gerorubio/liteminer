@@ -74,5 +74,8 @@
     "shape.liteminer.small_tunnel": "Small Tunnel",
     "shape.liteminer.staircase_up": "Staircase Up",
     "shape.liteminer.staircase_down": "Staircase Down",
-    "shape.liteminer.three_by_three": "3x3"
+    "shape.liteminer.three_by_three": "3x3",
+    "shape.liteminer.five_by_five": "5x5",
+    "shape.liteminer.seven_by_seven": "7x7",
+    "shape.liteminer.fifteen_by_fifteen": "15x15"
 }
